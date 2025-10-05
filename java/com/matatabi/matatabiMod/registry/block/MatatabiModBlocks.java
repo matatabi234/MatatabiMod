@@ -1,4 +1,4 @@
-package com.matatabi.matatabiMod.registry.blcok;
+package com.matatabi.matatabiMod.registry.block;
 
 import com.matatabi.matatabiMod.block.TestBlock;
 import com.matatabi.matatabiMod.mine.MatatabiMod;

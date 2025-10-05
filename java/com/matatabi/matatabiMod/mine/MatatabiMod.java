@@ -1,6 +1,6 @@
 package com.matatabi.matatabiMod.mine; // 👈 パッケージを修正
 
-import com.matatabi.matatabiMod.registry.blcok.MatatabiModBlocks;
+import com.matatabi.matatabiMod.registry.block.MatatabiModBlocks;
 import com.matatabi.matatabiMod.registry.item.MatatabiModItems;
 import com.matatabi.matatabiMod.registry.tab.ModTabs;
 import net.minecraftforge.eventbus.api.IEventBus;

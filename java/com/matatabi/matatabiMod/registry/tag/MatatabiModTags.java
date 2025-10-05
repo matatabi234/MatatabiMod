@@ -17,6 +17,8 @@ public class MatatabiModTags {
 
         public static final TagKey<Block> MATATABI_BLOCKS = tag("matatabi_blocks");
 
+        public static final TagKey<Block> NEEDS_MATATABI_TOOL = tag("needs_matatabi_tool");
+
         private static TagKey<Block> tag (String name){
             return BlockTags.create(new ResourceLocation(MatatabiMod.MOD_ID,name));
         }
