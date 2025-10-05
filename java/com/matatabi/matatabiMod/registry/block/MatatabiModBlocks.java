@@ -1,5 +1,6 @@
 package com.matatabi.matatabiMod.registry.block;
 
+import com.matatabi.matatabiMod.block.Amethyst_storage;
 import com.matatabi.matatabiMod.block.TestBlock;
 import com.matatabi.matatabiMod.mine.MatatabiMod;
 import net.minecraft.world.item.*;
@@ -16,6 +17,8 @@ public class MatatabiModBlocks {
 
         public static final RegistryObject<Block> TEST_BLOCK = BLOCKS.register("test_block",TestBlock::new);
 
+        public static final RegistryObject<Block> AMETHYST_STORAGE = BLOCKS.register("amethyst_storage", Amethyst_storage::new);
+
     }
 
     public static class BlcokItems{
@@ -26,5 +29,13 @@ public class MatatabiModBlocks {
                         .stacksTo(64))
 
                 );
+
+        public static final RegistryObject<Item> AMETHYST_STORAGE = BLOCK_ITEMS.register("amethyst_storage"
+                , () -> new BlockItem(Blocks.AMETHYST_STORAGE.get(), new Item.Properties()
+                        .stacksTo(64))
+
+        );
+
+
     }
 }

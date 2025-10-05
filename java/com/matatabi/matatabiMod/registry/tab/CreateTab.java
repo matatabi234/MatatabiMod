@@ -9,6 +9,7 @@ public class CreateTab {
     public static final Item[] items = {
             MatatabiModItems.TEST_ITEM.get(),
             MatatabiModBlocks.BlcokItems.TEST_BLOCK.get(),
+            MatatabiModBlocks.BlcokItems.AMETHYST_STORAGE.get(),
             MatatabiModItems.MATATABI_PICKAXE.get()
     };
 }
