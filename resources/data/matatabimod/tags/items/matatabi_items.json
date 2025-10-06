@@ -2,6 +2,7 @@
   "values" : [
     "matatabimod:test_item",
     "matatabimod:test_block",
-    "matatabimod:matatabi_pickaxe"
+    "matatabimod:matatabi_pickaxe",
+    "matatabimod:amethyst_storage"
   ]
 }

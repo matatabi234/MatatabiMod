@@ -26,13 +26,17 @@ public class MatatabiModBlocks {
 
         public static final RegistryObject<Item> TEST_BLOCK = BLOCK_ITEMS.register("test_block"
                 , () -> new BlockItem(Blocks.TEST_BLOCK.get(), new Item.Properties()
-                        .stacksTo(64))
+                        .stacksTo(64)
+                        .rarity(Rarity.EPIC)
+                )
 
                 );
 
         public static final RegistryObject<Item> AMETHYST_STORAGE = BLOCK_ITEMS.register("amethyst_storage"
                 , () -> new BlockItem(Blocks.AMETHYST_STORAGE.get(), new Item.Properties()
-                        .stacksTo(64))
+                        .stacksTo(64)
+                        .rarity(Rarity.EPIC)
+                )
 
         );
 
