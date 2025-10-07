@@ -1,6 +1,7 @@
 package com.matatabi.matatabiMod.mine; // 👈 パッケージを修正
 
 import com.matatabi.matatabiMod.block.entity.MatatabiModBlockEntityTypes;
+import com.matatabi.matatabiMod.block.gui.container.MatatabiModContainerTypes;
 import com.matatabi.matatabiMod.registry.block.MatatabiModBlocks;
 import com.matatabi.matatabiMod.registry.item.MatatabiModItems;
 import com.matatabi.matatabiMod.registry.tab.ModTabs;
@@ -23,6 +24,8 @@ public class MatatabiMod {
         MatatabiModBlocks.BlcokItems.BLOCK_ITEMS.register(bus);
         //ブロックのエンティティタイプの追加
         MatatabiModBlockEntityTypes.BLOCK_ENTITY_TYPES.register(bus);
+        // コンテナタイプ?の追加
+        MatatabiModContainerTypes.MENU_TYPES.register(bus);
 
     }
 }

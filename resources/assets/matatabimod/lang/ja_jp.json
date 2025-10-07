@@ -1,9 +1,16 @@
 {
   "itemGroup.matatabi_mod": "またたびMOD",
 
+
   "item.matatabimod.lightning_sword": "稲妻の剣",
   "item.matatabimod.test_item": "テスト用アイテム",
+  "item.matatabimod.matatabi_pickaxe": "またたびのツルハシ",
+
+
   "block.matatabimod.test_block": "テスト用ブロック",
   "block.matatabimod.amethyst_storage": "アメジストストレージ",
-  "item.matatabimod.matatabi_pickaxe": "またたびのツルハシ"
+
+
+  "container.matatabimod.amethyst_storage": "アメジストストレージ",
+  "container.matatabimod.inventory": "インベントリ"
 }
