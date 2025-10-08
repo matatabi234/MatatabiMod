@@ -10,7 +10,6 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 
@@ -50,7 +49,7 @@ public class Amethyst_Storage_Entity extends RandomizableContainerBlockEntity {
 
     @Override
     protected Component getDefaultName() {
-        return Component.translatable("container." + MatatabiMod.MOD_ID + ".amethyst_storage").withStyle(ChatFormatting.LIGHT_PURPLE);
+        return Component.translatable("container." + MatatabiMod.MOD_ID + ".amethyst_storage").withStyle(ChatFormatting.GREEN);
     }
 
     @Override

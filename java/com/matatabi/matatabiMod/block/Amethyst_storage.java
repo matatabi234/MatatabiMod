@@ -51,7 +51,7 @@ public class Amethyst_storage extends BaseEntityBlock {
     }
 
     @Override
-    public RenderShape getRenderShape(BlockState p_49232_) {
+    public RenderShape getRenderShape(BlockState state) {
         return RenderShape.MODEL;
     }
 }

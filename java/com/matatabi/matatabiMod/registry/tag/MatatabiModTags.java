@@ -20,7 +20,7 @@ public class MatatabiModTags {
         public static final TagKey<Block> NEEDS_MATATABI_TOOL = tag("needs_matatabi_tool");
 
         private static TagKey<Block> tag (String name){
-            return BlockTags.create(new ResourceLocation(MatatabiMod.MOD_ID,name));
+            return BlockTags.create(MatatabiMod.makeId(name));
         }
     }
 
@@ -30,7 +30,7 @@ public class MatatabiModTags {
 
 
         private static TagKey<Item> tag (String name){
-            return ItemTags.create(new ResourceLocation(MatatabiMod.MOD_ID,name));
+            return ItemTags.create(MatatabiMod.makeId(name));
         }
     }
 }

@@ -5,6 +5,7 @@ import com.matatabi.matatabiMod.block.gui.container.MatatabiModContainerTypes;
 import com.matatabi.matatabiMod.registry.block.MatatabiModBlocks;
 import com.matatabi.matatabiMod.registry.item.MatatabiModItems;
 import com.matatabi.matatabiMod.registry.tab.ModTabs;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -12,6 +13,11 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 @Mod("matatabimod")
 public class MatatabiMod {
     public static final String MOD_ID = "matatabimod";
+
+    public static ResourceLocation makeId(String path) {
+        // 💡 内部でMOD_IDを使っている
+        return new ResourceLocation(MOD_ID, path);
+    }
 
     public MatatabiMod(){
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
