@@ -19,6 +19,28 @@ public class Amethyst_Storage_Menu extends AbstractContainerMenu {
     public Amethyst_Storage_Menu(int a , Inventory inventory, Container container) {
         super(MatatabiModContainerTypes.AMETHYST_STORAGE.get(),a);
         this.container = container;
+        checkContainerSize(container,105);
+        container.startOpen(inventory.player);
+
+        for (int i = 0; i < 7; i++) {
+            this.addSlot(new Slot(container, i * 15,5,19+ i*18));
+            for (int x = 0; x < 15; x++) {
+                this.addSlot(new Slot(container,i* 4 + x + 1,i * 18, 19 + 18 * x));
+            }
+            
+        }
+        for (int k = 0; k < 3; k++) {
+            for (int l = 0; l < 9; l++){
+                this.addSlot(new Slot(inventory,l + 9 + k * 9,112 + l *18,146 + k * 18));
+
+            }
+
+        }
+        for (int m = 0; m < 9; m++) {
+            this.addSlot(new Slot(inventory,m,8 + m*18, 204));
+
+        }
+
     }
 
     @Override
@@ -49,5 +71,11 @@ public class Amethyst_Storage_Menu extends AbstractContainerMenu {
     @Override
     public boolean stillValid(Player player) {
         return this.container.stillValid(player);
+    }
+
+    @Override
+    public void removed(Player player) {
+        super.removed(player);
+        this.container.startOpen(player);
     }
 }

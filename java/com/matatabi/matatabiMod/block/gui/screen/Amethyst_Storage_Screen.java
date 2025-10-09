@@ -14,29 +14,36 @@ public class Amethyst_Storage_Screen extends AbstractContainerScreen<Amethyst_St
     private static final ResourceLocation AMETHYST_STORAGE_TEXTURE = MatatabiMod.makeId("textures/gui/container/amethyst_storage_gui.png");
 
 
-    private static final Component INVENTORY_TITLE = Component.translatable("container." + MatatabiMod.MOD_ID + ".inventory").withStyle(ChatFormatting.GREEN);
+    private static final Component INVENTORY_TITLE = Component.translatable("container." + MatatabiMod.MOD_ID + ".inventory").withStyle(ChatFormatting.DARK_PURPLE);
 
     public Amethyst_Storage_Screen(Amethyst_Storage_Menu menu, Inventory inventory, Component component) {
         super(menu, inventory, component);
-        this.imageWidth = 276;
-        this.imageHeight = 210;
+        this.imageWidth = 277;
+        this.imageHeight = 224;
         this.titleLabelX = 4;
-        this.titleLabelY = 3;
+        this.titleLabelY = 6;
         this.inventoryLabelX = 4;
-        this.inventoryLabelY = this.imageHeight - 90;
+        this.inventoryLabelY = this.imageHeight - 80;
+    }
+
+//    @Override
+//    protected void renderBg(GuiGraphics graphics, float f, int w, int h) {
+//        int setW = (this.width-this.imageWidth)/2;
+//        int setH = (this.height-this.imageHeight)/2;
+//        graphics.blit(AMETHYST_STORAGE_TEXTURE, this.leftPos, this.topPos, 8, 8, imageWidth, imageHeight, imageWidth, imageHeight);
+//
+//    }
+
+    @Override
+    protected void renderBg(GuiGraphics guiGraphics, float tick, int mouseX, int mouseY) {
+        guiGraphics.blit(AMETHYST_STORAGE_TEXTURE, this.leftPos, this.topPos, 0, 0, imageWidth, imageHeight, imageWidth, imageHeight);
     }
 
     @Override
-    protected void renderBg(GuiGraphics graphics, float f, int w, int h) {
-        int setW = (this.width-this.imageWidth)/2;
-        int setH = (this.height-this.imageHeight)/2;
-        graphics.blit(AMETHYST_STORAGE_TEXTURE,setW,setH,0,0,this.imageWidth,this.imageHeight);
+    protected void renderLabels(GuiGraphics guiGraphics, int w, int h) {
 
-    }
+        guiGraphics.drawString(this.font, this.title, this.titleLabelX, this.titleLabelY, 0xFF8A2BE2, false);
 
-    @Override
-    protected void renderLabels(GuiGraphics graphics, int w, int h) {
-        graphics.drawString(this.font, this.title, this.titleLabelX, this.titleLabelY, 0x55FFAA, false);
-        graphics.drawString(this.font, this.playerInventoryTitle, this.inventoryLabelX, this.inventoryLabelY, 0x55FFAA, false);
+        guiGraphics.drawString(this.font, this.playerInventoryTitle, this.inventoryLabelX, this.inventoryLabelY, 0xFF4B0082, false);
     }
 }
