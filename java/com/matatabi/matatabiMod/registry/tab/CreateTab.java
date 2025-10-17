@@ -10,6 +10,9 @@ public class CreateTab {
             MatatabiModItems.TEST_ITEM.get(),
             MatatabiModBlocks.BlcokItems.TEST_BLOCK.get(),
             MatatabiModBlocks.BlcokItems.AMETHYST_STORAGE.get(),
-            MatatabiModItems.MATATABI_PICKAXE.get()
+            MatatabiModBlocks.BlcokItems.BLUE_BLOCK.get(),
+            MatatabiModItems.MATATABI_PICKAXE.get(),
+            MatatabiModItems.BLUE_STONE.get(),
+            MatatabiModItems.BLUE_INGOT.get()
     };
 }

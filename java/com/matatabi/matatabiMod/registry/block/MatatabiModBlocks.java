@@ -1,6 +1,7 @@
 package com.matatabi.matatabiMod.registry.block;
 
 import com.matatabi.matatabiMod.block.Amethyst_storage;
+import com.matatabi.matatabiMod.block.BlueBlock;
 import com.matatabi.matatabiMod.block.TestBlock;
 import com.matatabi.matatabiMod.mine.MatatabiMod;
 import net.minecraft.world.item.*;
@@ -16,6 +17,8 @@ public class MatatabiModBlocks {
         public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MatatabiMod.MOD_ID);
 
         public static final RegistryObject<Block> TEST_BLOCK = BLOCKS.register("test_block",TestBlock::new);
+        public static final RegistryObject<Block> BLUE_BLOCK = BLOCKS.register("blue_block", BlueBlock::new);
+
 
         public static final RegistryObject<Block> AMETHYST_STORAGE = BLOCKS.register("amethyst_storage", Amethyst_storage::new);
 
@@ -34,6 +37,13 @@ public class MatatabiModBlocks {
 
         public static final RegistryObject<Item> AMETHYST_STORAGE = BLOCK_ITEMS.register("amethyst_storage"
                 , () -> new BlockItem(Blocks.AMETHYST_STORAGE.get(), new Item.Properties()
+                        .stacksTo(64)
+                        .rarity(Rarity.EPIC)
+                )
+
+        );
+        public static final RegistryObject<Item> BLUE_BLOCK = BLOCK_ITEMS.register("blue_block"
+                , () -> new BlockItem(Blocks.BLUE_BLOCK.get(), new Item.Properties()
                         .stacksTo(64)
                         .rarity(Rarity.EPIC)
                 )
