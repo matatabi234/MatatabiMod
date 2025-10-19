@@ -1,0 +1,41 @@
+# eclipse
+bin
+*.launch
+.settings
+.metadata
+.classpath
+.project
+
+# idea
+out
+*.ipr
+*.iws
+*.iml
+.idea
+
+# gradle
+build
+.gradle
+
+# other
+eclipse
+run
+
+# Files from Forge MDK
+forge*changelog.txt
+
+# IDE/OS files
+.idea/
+.vscode/
+*.iml
+.DS_Store
+
+# Gradle/Build files
+.gradle/
+build/
+bin/
+
+# Runtime/Cache files (絶対に除外)
+run/
+cache/
+logs/
