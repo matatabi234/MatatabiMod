@@ -1,0 +1,22 @@
+{
+  "itemGroup.matatabi_mod": "またたびMOD",
+
+
+  "item.matatabimod.blue_ingot": "ブルーインゴット",
+  "item.matatabimod.valine_ingot": "バリンインゴット",
+
+  "item.matatabimod.lightning_sword": "稲妻の剣",
+  "item.matatabimod.test_item": "テスト用アイテム",
+  "item.matatabimod.blue_stone":  "ブルーストーン",
+  "item.matatabimod.matatabi_pickaxe": "またたびのツルハシ",
+
+
+  "block.matatabimod.test_block": "テスト用ブロック",
+  "block.matatabimod.amethyst_storage": "アメジストストレージ",
+  "block.matatabimod.blue_block": "ブルーブロック",
+  "block.matatabimod.press_machine": "プレスマシン",
+
+
+  "container.matatabimod.amethyst_storage": "アメジストストレージ",
+  "container.matatabimod.inventory": "インベントリ"
+}
